@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title>HomePagePrototype</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="container-fluid" style="background-color:F6F6F6">
+
+        <div class="row">
+            <div class="col-lg-3 d-none d-lg-block" style="text-align: center; margin: auto;">
+                <h6>Telephone:+374-77-77-77-77</h6>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block" style="text-align: center; margin: auto;">
+                <h6>Welcome to our store</h6>
+            </div>
+            <div class="col-lg-2 col-6">
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>EN</option>
+                    <option value="1">AM</option>
+                    <option value="2">RU</option>
+                </select>
+
+            </div>
+            <div class="col-lg-2 col-6">
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>&#36;</option>
+                    <option value="1">&#8364;</option>
+                    <option value="2">&#1423;</option>
+                </select>
+            </div>
+            <div class="col-lg-2 d-none d-lg-block">
+                <button type="button" class="float-right btn btn-info text-white"
+                    style="margin:auto;padding-left: 20px;padding-right: 20px;text-align: center;">Wishlist<span
+                        class="badge badge-light" style="margin-left:10px">3</span></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid bg-yellow">
+        <div class="row">
+            <div class="col-6">
+                <nav class="navbar navbar-light">
+                    <a class="navbar-brand text-light" style="text-align: center;" href="file:///C:/Users/ashot/Desktop/tumo_bootstrap/index.html">
+                        <img src="https://pluspng.com/img-png/png-knitting--666.png" height="76px" alt=""
+                            loading="lazy">
+                        HandMade
+                    </a>
+                </nav>
+            </div>
+            <div class="col d-none d-lg-block" style="margin: auto;">
+                <form class="form-inline my-2 my-lg-0 float-right">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Name" aria-label="NAME">
+                    <button class="btn btn-outline-light my-2 my-sm-1" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-6 col-lg-auto" style="margin: auto;">
+                <div class="dropdown float-right">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Acount
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button" data-toggle="modal"
+                            data-target="#Login">Login</button>
+                        <button class="dropdown-item" type="button" data-toggle="modal"
+                            data-target="#Register">Register</button>
+                        <button class="dropdown-item" type="button">MyOrders</button>
+                        <button class="dropdown-item" type="button">Settings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" style="margin: auto;">
+
+
+                        <li class="nav-item dropdown border border-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Toys
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item"
+                                    href="file:///C:/Users/ashot/Desktop/tumo_bootstrap/shop.html">Birds</a>
+                                <a class="dropdown-item" href="#">Animals</a>
+                                <a class="dropdown-item" href="#">Charackters</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cloth
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Hats</a>
+                                <a class="dropdown-item" href="#">bracelets</a>
+                            </div>
+                        </li>
+
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Decors for house
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Pillows</a>
+                                <a class="dropdown-item" href="#">Chairs</a>
+                                <a class="dropdown-item" href="#">Ets...</a>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </nav>
+    </div>
+    <div class="col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="file:///C:/Users/ashot/Desktop/tumo_bootstrap/index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="file:///C:/Users/ashot/Desktop/tumo_bootstrap/shop.html">Toy</a></li>
+                <li class="breadcrumb-item"><a href="file:///C:/Users/ashot/Desktop/tumo_bootstrap/shop.html">Birds</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pinguins</li>
+            </ol>
+        </nav>
+    </div>
+    <hr>
+
+    <div class="container">
+        <h2 class="text-info">Knitting Pinguins</h2>
+        <div class="row d-flex">
+
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-3">
+                        <a data-fancybox="gallery"
+                            href="https://i.etsystatic.com/11286021/r/il/08d421/1680816324/il_794xN.1680816324_cepn.jpg"><img
+                                src="https://i.etsystatic.com/11286021/r/il/08d421/1680816324/il_794xN.1680816324_cepn.jpg"
+                                class="img-fluid"></a>
+                        <a data-fancybox="gallery"
+                            href="https://i.etsystatic.com/11286021/r/il/b5c812/1680815470/il_794xN.1680815470_iche.jpg"><img
+                                src="https://i.etsystatic.com/11286021/r/il/b5c812/1680815470/il_794xN.1680815470_iche.jpg"
+                                class="img-fluid"></a>
+
+                        <a data-fancybox="gallery"
+                            href="https://i.etsystatic.com/11286021/r/il/fb7b90/1728285313/il_794xN.1728285313_pn1a.jpg"><img
+                                src="https://i.etsystatic.com/11286021/r/il/fb7b90/1728285313/il_794xN.1728285313_pn1a.jpg"
+                                class="img-fluid"></a>
+                        <a data-fancybox="gallery"
+                            href="https://i.etsystatic.com/11286021/r/il/aa2117/1728293615/il_570xN.1728293615_e74v.jpg"><img
+                                src="https://i.etsystatic.com/11286021/r/il/aa2117/1728293615/il_570xN.1728293615_e74v.jpg"
+                                class="img-fluid"></a>
+                    </div>
+                    <div class="col-9 align-self-center border-left">
+                        <a data-fancybox="gallery"
+                            href="https://i.etsystatic.com/11286021/r/il/aa2117/1728293615/il_570xN.1728293615_e74v.jpg"><img
+                                src="https://i.etsystatic.com/11286021/r/il/aa2117/1728293615/il_570xN.1728293615_e74v.jpg"
+                                class="img-fluid"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-3">
+
+                <h5 class="card-title pricing-card-title text-info flex-align-center ml-lg-5">$32.95<strike
+                        class="text-danger">$35</strike>
+                </h5>
+
+                <div class="row">
+
+                    <div class="col-lg col-md col-12">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Quantity</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Max 5">
+                        </div>
+                    </div>
+                    <div class="col-lg col-md"><a href="#" class="btn btn-info btn-outline-primary text-white">Add To
+                            Cart</a>
+                    </div>
+
+                </div>
+                <h6>Size</h6>
+
+                <div class="row">
+                    <div class="col-auto">
+                        <form>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optradio" checked>
+                                    <p class="d-inline m-1">Small</p>
+                                </label>
+                            </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">
+                                <p class="d-inline m-1">Big</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <form>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optradio">
+                                    <p class="d-inline m-1">Together</p>
+                                </label>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+
+                <h6>Color</h6>
+                <div class="row">
+                    <div class="col-auto">
+                        <form>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" checked>
+                                    <p class="d-inline m-1">Black-White</p>
+                                </label>
+                            </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio">
+                                <p class="d-inline m-1">Grey-White</p>
+                            </label>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="accordion w-100" id="accordionExample">
+        <ul class="nav nav-tabs ml-3">
+            <li class="nav-item" id="One">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">About</a>
+            </li>
+            <li class="nav-item" id="Two">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">Shipping</a>
+            </li>
+        </ul>
+        <div class="card">
+            <div id="collapseOne" class="collapse show" aria-labelledby="One" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p class="m-2">toy is Ecology Clear and it will be a wonderful gift for someone who believes in
+                        positive thinking, loves small toys! hand-knitted with love and joy.
+                        Toy is made from acrylic/cotton blend yarn and stuffed with polyester filling.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div id="collapseTwo" class="collapse" aria-labelledby="Two" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p> Ready to ship in 1-2 days <br>
+                        Shipping can tak 5-15 days <br>
+                        Ship from Armenia. </p>
+                    <h6>Shipping Free into Armenia</h6>
+                    <h6> if to ship to out of Armenia it cost 2.3$</h6>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h3 class="text-center mb-3">It may Interest you</h3>
+
+        <div class="row d-flex justify-content-center">
+
+            <!-- PRODUCT_1 -->
+            <div class="card col-lg-3 col-md-4 col-sm-6 col-8 zoom">
+                <a href="#"><img src="https://m.media-amazon.com/images/I/81T7GB2swQL._SR500,500_.jpg"
+                        style="margin-top:10%" width="100%" alt=""></a>
+                <div class="card-body">
+
+                    <h5 class="card-title text-center">HandBag</h5>
+                    <h5 class="card-title pricing-card-title text-center text-info">$58.75<strike
+                            class="text-danger">$65</strike></h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-info btn-outline-primary text-white mr-1" data-toggle="modal"
+                            data-target="#QuickView">Quick View</a>
+                        <a href="#" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT_1 -->
+            <div class="card col-lg-3 col-md-4 col-sm-6 col-8 zoom">
+                <a href="#"><img
+                        src="https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/14199741_1646866112310236_1046430000463438879_n.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_ohc=mA2dKVsOi54AX9bWqkr&_nc_ht=scontent.fevn1-4.fna&oh=998ebdc4a0fbb53bbd18f536513ebcb1&oe=5F23111C"
+                        style="margin-top:10%" width="100%" alt=""></a>
+                <div class="card-body">
+
+                    <h5 class="card-title text-center">Toys</h5>
+                    <h5 class="card-title pricing-card-title text-center text-info">$22<strike
+                            class="text-danger">$30</strike>
+                    </h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-info btn-outline-primary text-white mr-1" data-toggle="modal"
+                            data-target="#QuickView">Quick View</a>
+                        <a href="#" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PRODUCT_1 -->
+            <div class="card col-lg-3 col-md-4 col-sm-6 col-8 zoom">
+                <a href="#"><img
+                        src="https://sc01.alicdn.com/kf/UTB8XwgyuYPJXKJkSafSq6yqUXXaT.jpg"
+                        style="margin-top:10%" width="100%" alt=""></a>
+                <div class="card-body">
+
+                    <h5 class="card-title text-center">HandBag</h5>
+                    <h5 class="card-title pricing-card-title text-center text-info">$32.75 <strike
+                            class="text-danger">$40</strike></h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-info btn-outline-primary text-white mr-1" data-toggle="modal"
+                            data-target="#QuickView">Quick View</a>
+                        <a href="#" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT_1 -->
+            <div class="card col-lg-3 col-md-4 col-sm-6 col-8 zoom">
+                <a href="#"><img
+                        src="https://www.toysew.ru/wp-content/gallery/obezyanka-amigurumi-kryuchkom/obezyanka-amigurumi-kryuchkom-9.jpg"
+                        style="margin-top:10%" width="100%" alt=""></a>
+                <div class="card-body">
+
+                    <h5 class="card-title text-center">Boots</h5>
+                    <h5 class="card-title pricing-card-title text-center text-info">$9.85 <strike
+                            class="text-danger">$15</strike></h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-info btn-outline-primary text-white mr-1" data-toggle="modal"
+                            data-target="#QuickView">Quick View</a>
+                        <a href="#" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <footer class="p-2 bg-white">
+        <div class="row text-uppercase bg-dark" style="text-align: center;padding: 20px;">
+            <div class="col-12 col-md-3 p-3"><a href="#" class="text-light text-decoration-none h4">Contact Us</a></div>
+            <div class="col-12 col-md-3 p-3"><a href="#" class="text-light text-decoration-none h4">Live Chat</a></div>
+            <div class="col-12 col-md-3 p-3"><a href="#" class="text-light text-decoration-none h4">Shipping</a></div>
+            <div class="col-12 col-md-3 p-3"><a href="#" class="text-light text-decoration-none h4">Term &
+                    Conditions</a>
+            </div>
+        </div>
+        <br class="d-none d-md-block">
+        <div class="row bg-light text-center d-none d-md-flex">
+            <div class="col d-md-block ">
+                <h4 class="text-capitalize font-weight-bold border-bottom">Group_1</h4>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">Link_1</li>
+                    <li class="list-group-item border-0">Link_2</li>
+                    <li class="list-group-item border-0">Link_3</li>
+
+                </ul>
+            </div>
+
+            <div class="col d-md-block border-gray border-left">
+                <h4 class="text-capitalize font-weight-bold border-bottom">Group_2</h4>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">Link_1</li>
+                    <li class="list-group-item border-0">Link_2</li>
+                    <li class="list-group-item border-0">Link_3</li>
+
+                </ul>
+            </div>
+
+            <div class="col d-md-block border-gray border-left">
+                <h4 class="text-capitalize font-weight-bold border-bottom">Group_3</h4>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">Link_1</li>
+                    <li class="list-group-item border-0">Link_2</li>
+                    <li class="list-group-item border-0">Link_3</li>
+
+                </ul>
+            </div>
+
+            <div class="col d-md-block border-gray border-left">
+                <h4 class="text-capitalize font-weight-bold border-bottom">Group_4</h4>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">Link_1</li>
+                    <li class="list-group-item border-0">Link_2</li>
+                    <li class="list-group-item border-0">Link_3</li>
+
+                </ul>
+            </div>
+
+            <div class="col d-md-block border-gray border-left">
+                <h4 class="text-capitalize font-weight-bold border-bottom">sGroup_5</h4>
+                <ul class="list-group">
+                    <li class="list-group-item border-0">Link_1</li>
+                    <li class="list-group-item border-0">Link_2</li>
+                    <li class="list-group-item border-0">Link_3</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright text-center bg-dark py-3 text-light">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MyOnlineShopPrototype</a>
+        </div>
+    </footer>
+
+
+
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <style>
+        .carousel {
+            margin: auto;
+            width: 100%;
+            min-width: 200px;
+        }
+
+        .bg-yellow {
+            background-color: #B65DA4;
+        }
+
+        .image_hover_Category {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        .img_Container:hover .image_hover_Category {
+            opacity: 0.6;
+        }
+
+        .img_Container:hover .middle {
+            opacity: 1;
+        }
+
+        .zoom {
+            transition: transform .4s;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.05);
+            /* IE 9 */
+            -webkit-transform: scale(1.05);
+            /* Safari 3-8 */
+            transform: scale(1.05);
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+    </style>
+</body>
+
+</html>
