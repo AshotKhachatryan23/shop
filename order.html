@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>OrdersPagePrototype</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="container-fluid" style="background-color:F6F6F6">
+
+    <div class="row">
+      <div class="col-lg-3 d-none d-lg-block" style="text-align: center; margin: auto;">
+        <div class="row">
+          <div class="col-auto">
+            <h6>Telephone:+374-77-77-77-77</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 d-none d-lg-block" style="text-align: center; margin: auto;">
+        <h6>Welcome to our store</h6>
+      </div>
+      <div class="col-lg-2 col-6">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>EN</option>
+          <option value="1">AM</option>
+          <option value="2">RU</option>
+        </select>
+
+      </div>
+      <div class="col-lg-2 col-6">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>&#36;</option>
+          <option value="1">&#8364;</option>
+          <option value="2">&#1423;</option>
+        </select>
+      </div>
+      <div class="col-lg-2 d-none d-lg-block">
+        <button type="button" class="float-right btn btn-info text-white"
+          style="margin:auto;padding-left: 20px;padding-right: 20px;text-align: center;">Wishlist<span
+            class="badge badge-light" style="margin-left:10px">3</span></button>
+      </div>
+    </div>
+
+  </div>
+
+  
+  
+</div>
+<div class="container-fluid bg-yellow">
+  <div class="row">
+    <div class="col-6">
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand text-light" style="text-align: center;" href="index.html">
+          <img src="https://pluspng.com/img-png/png-knitting--666.png" height="76px" alt="" loading="lazy">
+          HandMade
+        </a>
+      </nav>
+    </div>
+    <div class="col d-none d-lg-block" style="margin: auto;">
+      <form class="form-inline my-2 my-lg-0 float-right">
+        <input class="form-control mr-sm-2" type="search" placeholder="Name" aria-label="NAME">
+        <button class="btn btn-outline-light my-2 my-sm-1" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="col-6 col-lg-auto" style="margin: auto;">
+      <div class="dropdown float-right">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Acount
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button" data-toggle="modal" data-target="#Login"><a href="#" class="text-decoration-none text-dark">Login</a></button>
+          <button class="dropdown-item" type="button" data-toggle="modal" data-target="#Register"><a href="#" class="text-decoration-none text-dark">Register</a></button>
+          <button class="dropdown-item" type="button"><a href="order.html" class="text-decoration-none text-dark">MyOrders</a></button>
+          <button class="dropdown-item" type="button"><a href="account.html" class="text-decoration-none text-dark">Settings</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="margin: auto;">
+
+
+          <li class="nav-item dropdown border border-0">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Toys
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="shop.html">Birds</a>
+              <a class="dropdown-item" href="#">Animals</a>
+              <a class="dropdown-item" href="#">Charackters</a>
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Cloth
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Hats</a>
+              <a class="dropdown-item" href="#">bracelets</a>
+            </div>
+          </li>
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Decors for house
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Pillows</a>
+              <a class="dropdown-item" href="#">Chairs</a>
+              <a class="dropdown-item" href="#">Ets...</a>
+            </div>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+  <div class="container-fluid-sm">
+    <div class="row">
+      <div class="col-12 col-lg-4 border-right">
+        <div class="row d-flex justify-content-center">
+          <div class="ordersBlock col-md-5 col-lg-12">
+            
+
+            <div class="container">
+<h2 class="text-md-center text-left ml-2 ml-lg-0 mt-lg-3 mt-3 mt-md-0">My Orders</h2>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">#8714021963</th>
+                    <td>23.01.2020</td>
+                    <td>34.8$</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#1619417806</th>
+                    <td>11.12.2019</td>
+                    <td>44.65$</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">#5759418806</th>
+                    <td>23.01.2019</td>
+                    <td>14.45$</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-center  mb-lg-2 mb-2">
+                <a href="#" class="btn btn-outline-dark w-50 ">See All</a></div>
+            </div>
+          </div>
+          <div class="cupponsBlock col-md-5 col-lg-12">
+            <div class="container border-md-0">
+              <h2 class="text-md-center text-left ml-2 ml-lg-0 mt-lg-3 mt-3 mt-md-0">My Cupons</h2>
+
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Code</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Gift Card</th>
+                    <td>5$</td>
+                    <td><a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#CuponShow">Code</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gift Card</th>
+                    <td>5$</td>
+                    <td><a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#CuponShow">Code</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-12 ml-3 ml-lg-0 mt-3">
+
+            <h2 class="text-lg-center text-left">Messages</h2>
+            <p class="text-lg-center text-left text-success font-weight-bold mb-2 border-bottom">#8714021963 Is aplayed</p>
+            <p class="text-lg-center text-left text-danger font-weight-bold mb-2 border-bottom">#8424414818 Is denied</p>
+            <p class="text-lg-center text-left text-success font-weight-bold mb-2 border-bottom">#1619417806 Is aplayed</p>
+            <p class="text-lg-center text-left text-success font-weight-bold mb-2 border-bottom">#5759418806 Is aplayed</p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-8 mt-3 mt-lg-0">
+        <h2 class="text-lg-left text-lg-center text-left ml-2">My Wish List</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row d-flex">1</th>
+              <td><img src="https://m.media-amazon.com/images/I/81T7GB2swQL._SR500,500_.jpg" height="60px" alt="">
+                <a href="Product.html" class="text-center text-decoration-none text-dark ml-lg-2">Toy</a>
+              </td>
+              <td>58.75$</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row d-flex">2</th>
+              <td><img
+                  src="https://i0.wp.com/zhurnal.rykodelniza.ru/wp-content/uploads/2019/08/%D0%91%D0%B5%D0%B7-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1-1.jpg?ssl=1"
+                  height="60px" alt="">
+                <a href="Product.html" class="text-center text-decoration-none text-dark ml-lg-2">Bag</a>
+              <td>26.99$</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><img src="https://sc01.alicdn.com/kf/UTB8XwgyuYPJXKJkSafSq6yqUXXaT.jpg" height="60px" alt="">
+                <a href="Product.html" class="text-center text-decoration-none text-dark ml-lg-2">Toy</a>
+              <td>25$</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td><a href="#" class="text-center text-decoration-none text-dark font-weight-bold ml-lg-2">TOTAL</a>
+              </td>
+              <td>200$</td>
+              <td><a href="checkout.html" class="btn btn-info btn-outline-primary text-white">Check Out</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <h2 class="ml-2">My Recent Viewed</h2>
+        <div class="row d-flex justify-content-center">
+
+          <!-- PRODUCT_1 -->
+          <div class="card col-lg-4 col-md-4 col-sm-6 col-10 zoom">
+            <a href="Product.html"><img
+                src="https://i0.wp.com/zhurnal.rykodelniza.ru/wp-content/uploads/2019/08/%D0%91%D0%B5%D0%B7-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-1-1.jpg?ssl=1"
+                style="margin-top:10%" width="100%" alt=""></a>
+            <div class="card-body">
+
+              <h5 class="card-title text-center">HandBag</h5>
+              <h5 class="card-title pricing-card-title text-center text-info">$58.75<strike
+                  class="text-danger">$65</strike></h5>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-info btn-outline-primary text-white mr-1" data-toggle="modal"
+                  data-target="#QuickView">Quick View</a>
+                <a href="#" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCT_1 -->
+          <div class="card col-lg-4 col-md-4 col-sm-6 col-10 zoom">
+            <a href="Product.html"><img
+                src="https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/14199741_1646866112310236_1046430000463438879_n.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_ohc=mA2dKVsOi54AX9bWqkr&_nc_ht=scontent.fevn1-4.fna&oh=998ebdc4a0fbb53bbd18f536513ebcb1&oe=5F23111C"
+                style="margin-top:10%" width="100%" alt=""></a>
+            <div class="card-body">
+
+              <h5 class="card-title text-center">Toys</h5>
+              <h5 class="card-title pricing-card-title text-center text-info">$22<strike
+                  class="text-danger">$30</strike>
+              </h5>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-info btn-outline-primary text-white mr-1" data-toggle="modal"
+                  data-target="#QuickView">Quick View</a>
+                <a href="#" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- PRODUCT_1 -->
+          <div class="card col-lg-4 col-md-4 col-sm-6 col-10 zoom">
+            <a href="Product.html"><img
+                src="https://scontent.fevn1-4.fna.fbcdn.net/v/t1.0-9/104492611_2577663312563840_7349031066972301978_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_ohc=TROhOs0gu10AX9s16f1&_nc_ht=scontent.fevn1-4.fna&oh=3a4f6727f98f6c10450f690a002bbc45&oe=5F21E279"
+                style="margin-top:10%" width="100%" alt=""></a>
+            <div class="card-body">
+
+              <h5 class="card-title text-center">HandBag</h5>
+              <h5 class="card-title pricing-card-title text-center text-info">$32.75 <strike
+                  class="text-danger">$40</strike></h5>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-info btn-outline-primary text-white mr-1" data-toggle="modal"
+                  data-target="#QuickView">Quick View</a>
+                <a href="#" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="bg-white">
+    <div class="row text-uppercase bg-dark d-flex justify-content-center">
+      <div class="col-12 col-md py-3 ml-3"><a href="#" class="text-light text-decoration-none h4">Contact Us</a></div>
+      <div class="col-12 col-md py-3 ml-3"><a href="#" class="text-light text-decoration-none h4">Live Chat</a></div>
+      <div class="col-12 col-md py-3 ml-3"><a href="#" class="text-light text-decoration-none h4">Shipping</a></div>
+      <div class="col-12 col-md py-3 ml-3"><a href="#" class="text-light text-decoration-none h4">Term & Conditions</a>
+      </div>
+    </div>
+    <br class="d-none d-md-block">
+    <div class="row bg-light text-center d-none d-md-flex">
+      <div class="col d-md-block ">
+        <h4 class="text-capitalize font-weight-bold border-bottom">About</h4>
+        <ul class="list-group">
+          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-secondary">Products</a>
+          </li>
+          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-secondary">Shipping</a>
+          </li>
+          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-secondary">Payment</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="col d-md-block border-gray border-left">
+        <h4 class="text-capitalize font-weight-bold border-bottom">USEFUL LINKS</h4>
+        <ul class="list-group">
+          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-secondary">My Account</a>
+          </li>
+          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-secondary">Contact</a>
+          </li>
+          <li class="list-group-item border-0"><a href="#" class="text-decoration-none text-secondary">Checkout</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="col d-md-block border-gray border-left">
+        <h4 class="text-capitalize font-weight-bold border-bottom">Contact Information</h4>
+        <ul class="list-group">
+          <li class="list-group-item border-0"><i style="font-size:24px" class="fa mr-1">&#xf003;</i><a href="#"
+              class="text-decoration-none text-secondary">ashot.khachatryan23@tumo.org</a></li>
+          <li class="list-group-item border-0"><i style="font-size:24px" class="fa mr-1">&#xf095;</i><a href="#"
+              class="text-decoration-none text-secondary">(+374)95371292</a></li>
+          <li class="list-group-item border-0">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"
+                    style="font-size:48px;color:rgb(25,119,243)"></i></a>
+              </div>
+              <div class="col-auto">
+                <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-square"
+                    style="font-size:48px;color:red"></i></a>
+              </div>
+              <div class="col-auto"><a href="https://github.com/AshotKhachatryan23/shop"><i class="fa fa-github"
+                    style="font-size:48px;color:black"></i></a></div>
+              <div class="col-auto"><a href="https://twitter.com/explore"><i class="fa fa-twitter-square"
+                    style="font-size:48px;color:rgb(0,170,236)"></i></a>
+              </div>
+            </div>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright text-center bg-dark py-3 text-light">© 2020 Copyright:
+      <a href="#"> MyOnlineShopPrototype</a>
+    </div>
+  </footer>
+
+
+  <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="Register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="QuickView" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Quick View Of Pinguins</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="text-center">Pinguin</h2>
+
+
+
+
+          <div id="productQuickViewSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner p-3">
+              <div class="carousel-item active">
+                <img class="d-block w-100"
+                  src="https://i.etsystatic.com/11286021/r/il/aa2117/1728293615/il_570xN.1728293615_e74v.jpg"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="https://i.etsystatic.com/11286021/r/il/b5c812/1680815470/il_794xN.1680815470_iche.jpg"
+                  alt="Second slide">
+
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="https://i.etsystatic.com/11286021/r/il/fb7b90/1728285313/il_794xN.1728285313_pn1a.jpg"
+                  alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="https://i.etsystatic.com/11286021/r/il/08d421/1680816324/il_794xN.1680816324_cepn.jpg"
+                  alt="Third slide">
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#productQuickViewSlider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productQuickViewSlider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <p>Handmade crochet toy made with 100% positive emotions and love. It looks for a new home to be
+            loved and
+            taken care of.
+            This crochet toy is a wonderful gift for a birthday, Christmas, baby shower or any other
+            occasion or
+            celebration.
+          </p>
+          <h5 class="card-title pricing-card-title text-info">$32.95<strike class="text-danger">$35</strike>
+          </h5>
+          <a href="cart.html" class="btn btn-info btn-outline-primary text-white">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="CuponShow" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">GIFT CARD</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container">
+            <h5 class="text-left text-info">This Cupon Can Used Onece.You can use it or give to your friends</h5>
+
+
+
+            <h5 class="card-title pricing-card-title text-danger mt-3 mb-3"> This Cupon Add 5$ to account Balance after
+              using
+            </h5>
+            <div class="row d-flex justify-content">
+              <div class="col-auto">
+                <a href="#" class="btn btn-info btn-outline-primary text-white">Use it in this account</a>
+              </div>
+              <div class="col-auto"><a href="#" class="btn btn-info btn-outline-primary text-white" data-toggle="modal"
+                  data-target="#ShowCode" data-dismiss="modal" aria-label="Close">Show Code</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="ShowCode" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Gift Code</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container">
+            <h5 class="text-left text-info">f62kf74bdf7532</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <style>
+    .carousel {
+      margin: auto;
+      width: 100%;
+      min-width: 200px;
+    }
+
+    .bg-yellow {
+      background-color: #B65DA4;
+    }
+
+    .image_hover_Category {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .text {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
+    .img_Container:hover .image_hover_Category {
+      opacity: 0.6;
+    }
+
+    .img_Container:hover .middle {
+      opacity: 1;
+    }
+
+    .zoom {
+      transition: transform .4s;
+    }
+
+    .img_rotate {
+      transition: all 0.5s ease;
+    }
+
+    .img_rotate:hover {
+      transform: rotate(-10deg);
+    }
+
+    .zoom:hover {
+      -ms-transform: scale(1.025);
+      /* IE 9 */
+      -webkit-transform: scale(1.025);
+      /* Safari 3-8 */
+      transform: scale(1.025);
+    }
+
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+  </style>
+</body>
+
+</html>
